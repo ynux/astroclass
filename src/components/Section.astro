@@ -1,29 +1,31 @@
 ---
 import Container from "./Container.astro";
+
 interface Props {
-  isDark?: boolean;
+  dark?: boolean;
 }
 
-const { isDark = false } = Astro.props;
+const { dark = false } = Astro.props;
 ---
 
-{
-  (
-    <Container>
-      <div class={`section ${isDark ? "darkmode" : ""}`}>
-        <slot />
-      </div>
-    </Container>
-  )
-}
+<section class={dark ? "dark" : ""}>
+  <Container>
+    <slot />
+  </Container>
+</section>
 
 <style>
-  .section {
-    background-color: var(--secondary);
-    padding: 100px;
-  }
-  .section.darkmode {
-    background-color: var(--primary);
-    padding: 100px;
+  section {
+    padding: 80px 0;
+
+    &.dark {
+      background: var(--secondary);
+    }
+
+    @media (max-width: 1000px) {
+      & {
+        padding: 40px 0;
+      }
+    }
   }
 </style>
