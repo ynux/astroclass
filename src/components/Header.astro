@@ -1,4 +1,8 @@
-<div class="container">
+---
+import ButtonLink from "../components/ButtonLink.astro";
+import Container from "../components/Container.astro";
+---
+<Container>
   <header id="header">
 		<div class="content">
 			<h1>
@@ -9,21 +13,14 @@
 				I do DevOps, mostly in clouds.
 			</p>
 			<div class="button-container">
-        <a class="button-link secondary" href="/projects" >View projects</a>
-        <a class="button-link primary"  href="/resume.pdf"  download>Download resume</a>
+        <ButtonLink href="/projects" text="View projects" variant="secondary" />
+ .      <ButtonLink href="/resume.pdf" text="Download resume" variant="primary" isDownload={true} />
 			</div>
 		</div>
-		<img src="/images/me.png" width="200" height="200" alt="A picture of me" />
+		<img src="/images/sunyrund.png" width="200" height="200" alt="A picture of me" />
 	</header>
-</div>
+</Container>
 <style>
-   
-
-    .container {
-      max-width: 1100px;
-          margin: 0 auto;
-    padding: 0 60px;
-  }
 
   #header {
     display: grid;
@@ -45,37 +42,6 @@
       }
     } 
     
-
-    .button-container {
-        display: flex;               /* Aktiviert Flexbox für die Anordnung */
-        gap: 15px;                   /* Erzeugt exakt 15px Abstand zwischen den Links */
-        flex-wrap: wrap;             /* Erlaubt Zeilenumbruch auf kleinen Bildschirmen */ 
-    }
-     .button-link {
-      padding: 10px 20px;
-      width: 140px;
-      text-align: center;
-      text-decoration: none;
-      font-size: medium;
-      border: 2px solid;
-  }
-
-  .primary {
-    background-color: var(--primary);
-    color: white;
-          border-radius: 5px;
-              border-color: var(--primary);
-
-
-  }
-
-  .secondary {
-    background-color: white;
-    color: var(--primary);
-    border-color: var(--primary);
-          border-radius: 5px;
-
-  }
 
 
     .description {

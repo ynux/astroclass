@@ -1,0 +1,52 @@
+---
+interface Props {
+  href: string;
+  text: string;
+  variant?: 'primary' | 'secondary';
+  isDownload?: boolean; 
+}
+
+const {href, text, variant="primary", isDownload} = Astro.props;
+---
+
+{isDownload &&
+        <a class="button-link {variant}"  href={href}  download>{text}</a>
+}
+
+{!isDownload &&
+        <a class="button-link {variant}"  href={href}  >{text}</a>
+}
+<style>
+
+    .button-container {
+        display: flex;               /* Aktiviert Flexbox für die Anordnung */
+        gap: 15px;                   /* Erzeugt exakt 15px Abstand zwischen den Links */
+        flex-wrap: wrap;             /* Erlaubt Zeilenumbruch auf kleinen Bildschirmen */ 
+    }
+     .button-link {
+      padding: 10px 20px;
+      width: 140px;
+      text-align: center;
+      text-decoration: none;
+      font-size: medium;
+      border: 2px solid;
+  }
+
+  .primary {
+    background-color: var(--primary);
+    color: white;
+          border-radius: 5px;
+              border-color: var(--primary);
+
+
+  }
+
+  .secondary {
+    background-color: white;
+    color: var(--primary);
+    border-color: var(--primary);
+          border-radius: 5px;
+
+  }
+
+</style>
