@@ -1,48 +1,14 @@
 ---
 import Section from "./Section.astro";
-
-const heading = "My Projects";
-const cta = { text: "View All", href: "/projects" };
-
-const projects = [
-  {
-    title: "E-commerce Dashbord",
-    slug: "project-1",
-    description:
-      "A fast, scalable admin panel for managing products, orders, and sales analytics. Built with React, Next.js, Firebase, and TailwindCSS.",
-    image: "/images/projects/project-1.png",
-    githubURL: "https://github.com/jamesqquick",
-    liveSiteURL: "https://jamesqquick.com",
-  },
-  {
-    title: "SaaS Landing Page",
-    slug: "project-2",
-    description:
-      "A redesign of ABC’s landing page, improving UI/UX, conversion rates, and performance. Built with Next.js, TailwindCSS, and Framer Motion.",
-    image: "/images/projects/project-2.png",
-    githubURL: "https://github.com/jamesqquick",
-    liveSiteURL: "https://jamesqquick.com",
-  },
-  {
-    title: "DevTools Chrome Extension",
-    slug: "project-3",
-    description:
-      "A Chrome DevTools extension for monitoring API requests in real-time. It provides live request logging and response analysis for developers.",
-    image: "/images/projects/project-3.png",
-    githubURL: "https://github.com/jamesqquick",
-    liveSiteURL: "https://jamesqquick.com",
-  },
-];
+import SectionHeader from "./SectionHeader.astro";
+import projects from "../data/projects.json";
 ---
 
-<Section dark={true}>
-  <div class="section-header">
-    <h2>
-      {heading}
-    </h2>
-    <a href={cta.href}>{cta.text}</a>
-  </div>
-
+<Section>
+  <SectionHeader
+    heading="My Projects"
+    cta={{ text: "View All", href: "/projects" }}
+  />
   <div class="projects-container">
     {
       projects.map((project) => (
@@ -56,7 +22,6 @@ const projects = [
     }
   </div>
 </Section>
-
 <style>
   .projects-container {
     display: grid;
@@ -85,26 +50,6 @@ const projects = [
       & {
         grid-template-columns: 1fr;
       }
-    }
-  }
-
-  .section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 60px;
-
-    h2 {
-      margin: 0;
-      font-size: 32px;
-      font-weight: 600;
-    }
-
-    a {
-      size: 16px;
-      text-decoration: none;
-      font-weight: 400;
-      color: var(--dark);
     }
   }
 </style>

@@ -38,16 +38,19 @@ import Section from "../components/Section.astro";
     align-items: center;
 
     h1 {
-      font-size: 24px; /* Schriftgröße (beliebig anpassbar) */
-      margin-bottom: 30px; /* Abstand zum nachfolgenden Inhalt */
-      display: flex; /* Flexbox aktivieren */
-      flex-direction: column; /* Elemente untereinander anordnen */
-      gap: 10px; /* Optional: Abstand zwischen den Elementen im Header */
-      padding: 15px; /* Optional: Innenabstand */
+      font-size: 44px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
 
       .accent {
         color: var(--primary);
       }
+    }
+
+    .button-container {
+      display: flex;
+      gap: 10px;
     }
 
     .description {
@@ -69,23 +72,8 @@ import Section from "../components/Section.astro";
     }
 
     @media (max-width: 600px) {
-      & {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 40px;
-
-        img {
-          grid-row: 1;
-        }
-      }
-    }
-    /* Media Query für mobile Bildschirme bis maximal 600px Breite */
-    @media (max-width: 600px) {
       .button-container {
-        flex-direction: column; /* Ändert die Ausrichtung von horizontal zu vertikal */
-        align-items: stretch; /* Optional: Zwingt die Buttons, die volle Breite einzunehmen */
-        padding-left: 30px;
-        padding-right: 30px;
+        flex-direction: column;
       }
     }
   }
