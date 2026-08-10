@@ -1,10 +1,12 @@
 ---
 import Section from "./Section.astro";
 import SectionHeader from "./SectionHeader.astro";
-import projects from "../data/projects.json";
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("project");
 ---
 
-<Section>
+<Section dark={true}>
   <SectionHeader
     heading="My Projects"
     cta={{ text: "View All", href: "/projects" }}
@@ -13,9 +15,9 @@ import projects from "../data/projects.json";
     {
       projects.map((project) => (
         <div class="card">
-          <img src={project.image} />
+          <img src={project.data.image} />
           <h3>
-            <a href={project.liveSiteURL}>{project.title}</a>
+            <a href={project.data.liveSiteURL}>{project.data.title}</a>
           </h3>
         </div>
       ))
