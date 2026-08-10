@@ -14,18 +14,24 @@ import Section from "../components/Section.astro";
       <div class="button-container">
         <ButtonLink href="/projects" text="View projects" variant="secondary" />
         <ButtonLink
-          href="/resume.pdf"
+          href="/resume_kim_202607.pdf"
           text="Download resume"
-          variant="primary"
+          variant="secondary"
+          isDownload={true}
+        />
+        <ButtonLink
+          href="/lebenslauf_kim_202607.pdf"
+          text="Lebenslauf herunterladen"
+          variant="secondary"
           isDownload={true}
         />
       </div>
     </div>
     <img
-      src="/images/sunygrin-canva-quadrat.png"
+      src="/images/sunypage_temp_portrait.png"
       width="200"
       height="200"
-      alt="A picture of me"
+      alt="Suny face"
     />
   </header>
 </Section>
@@ -36,7 +42,9 @@ import Section from "../components/Section.astro";
     justify-items: center;
     gap: 80px;
     align-items: center;
-
+    img {
+      border-radius: 5%;
+    }
     h1 {
       font-size: 44px;
       display: flex;

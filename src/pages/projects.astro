@@ -4,9 +4,6 @@ import ButtonLink from "../components/ButtonLink.astro";
 import Layout from "../layouts/Layout.astro";
 import Section from "../components/Section.astro";
 import HorizontalSeparator from "../components/HorizontalSeparator.astro";
-
-export async function getProjects(params: type) {}
-
 const heading = "My Projects";
 const projects = await getCollection("project");
 ---

@@ -6,15 +6,13 @@ import Container from "./Container.astro";
   <Container>
     <div class="nav-container">
       <div>
-        <a href="/"><img src="images/ASTRA.svg" alt="Astra" /></a>
-        <!-- add anchor tag with the logo as the image to link to the home page -->
+        <a href="/"
+          ><img src="images/sunypage_temp_eyes.png" alt="Suny Eyes" /> Suny Home</a
+        >
       </div>
       <ul class="nav-items">
         <li><a href="/projects">Projects</a></li>
-        <li><a href="/Blog">blog</a></li>
         <li><a href="/contact">Contact</a></li>
-        <!-- add three list items for projects, blog, and contact -->
-        <!-- should be an li with a nested anchor tag -->
       </ul>
     </div>
   </Container>
@@ -26,6 +24,7 @@ import Container from "./Container.astro";
 
     img {
       height: 20px;
+      border-radius: 5%;
     }
 
     .nav-container {
