@@ -1,26 +1,25 @@
 [
   {
-    "title": "E-commerce Dashbord",
-    "slug": "project-1",
-    "description": "A fast, scalable admin panel for managing products, orders, and sales analytics. Built with React, Next.js, Firebase, and TailwindCSS.",
-    "image": "/images/projects/project-1.png",
-    "githubURL": "https://github.com/jamesqquick",
-    "liveSiteURL": "https://jamesqquick.com"
-  },
-  {
-    "title": "SaaS Landing Page",
-    "slug": "project-2",
-    "description": "A redesign of ABC’s landing page, improving UI/UX, conversion rates, and performance. Built with Next.js, TailwindCSS, and Framer Motion.",
-    "image": "/images/projects/project-2.png",
-    "githubURL": "https://github.com/jamesqquick",
-    "liveSiteURL": "https://jamesqquick.com"
-  },
-  {
-    "title": "DevTools Chrome Extension",
-    "slug": "project-3",
-    "description": "A Chrome DevTools extension for monitoring API requests in real-time. It provides live request logging and response analysis for developers.",
-    "image": "/images/projects/project-3.png",
-    "githubURL": "https://github.com/jamesqquick",
-    "liveSiteURL": "https://jamesqquick.com"
+    "title": "Databricks on AWS",
+    "fromdate": "June 2025",
+    "todate": "Novemnber 2025",
+    "industry": "Financial Services",
+    "slug": "Implement a Databricks pipeline to combine web tracking data with customer information",
+    "tasks": [
+      "Build the cloud resources, including storage, compute, roles and privileges",
+      "Configuration of Databricks: Resources and Roles down to the catalog level",
+      "Connect data sources and data sinks"
+    ],
+    "roles": "Cloud Architect & Engineer",
+    "skills": [
+      "AWS",
+      "Databricks",
+      "Terraform",
+      "GitHub Actions",
+      "Privilege Management",
+      "Cloud Security",
+      "Automation",
+      "Cloud Concepts"
+    ]
   }
 ]
