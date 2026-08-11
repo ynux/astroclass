@@ -8,24 +8,8 @@ import Section from "../components/Section.astro";
     <div class="content">
       <h1>
         <span>Hi, I am Suny.</span>
-        <span>You will <span class="accent">always</span> remember me.</span>
+        <span class="accent">Control complexity, love simplicity.</span>
       </h1>
-      <p class="description">I do DevOps, mostly in clouds.</p>
-      <div class="button-container">
-        <ButtonLink href="/projects" text="View projects" variant="secondary" />
-        <ButtonLink
-          href="/resume_kim_202607.pdf"
-          text="Download resume"
-          variant="secondary"
-          isDownload={true}
-        />
-        <ButtonLink
-          href="/lebenslauf_kim_202607.pdf"
-          text="Lebenslauf herunterladen"
-          variant="secondary"
-          isDownload={true}
-        />
-      </div>
     </div>
     <img
       src="/images/sunypage_temp_portrait.png"
@@ -33,8 +17,34 @@ import Section from "../components/Section.astro";
       height="200"
       alt="Suny face"
     />
+    <p class="description">
+      Cloud Architect with 25+ years of in-house and consulting expertise. I
+      build automated cloud systems. Data is always at the center, AI is part of
+      the story, and CI/CD is where technology and processes converge.
+    </p>
+    <div class="button-container">
+      <ButtonLink
+        href="/resume_kim_202607.pdf"
+        text="Download resume"
+        variant="secondary"
+        isDownload={true}
+      />
+      <ButtonLink
+        href="/lebenslauf_kim_202607.pdf"
+        text="Lebenslauf herunterladen"
+        variant="secondary"
+        isDownload={true}
+      />
+      <ButtonLink
+        href="/projektliste_202607.pdf"
+        text="Projektliste herunterladen"
+        variant="secondary"
+        isDownload={true}
+      />
+    </div>
   </header>
 </Section>
+
 <style>
   #header {
     display: grid;
@@ -67,7 +77,7 @@ import Section from "../components/Section.astro";
       margin-bottom: 30px;
     }
 
-    @media (max-width: 1000px) {
+    @media (max-width: 600px) {
       & {
         grid-template-columns: 1fr;
         grid-template-rows: auto;

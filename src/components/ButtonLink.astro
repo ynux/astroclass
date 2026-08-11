@@ -27,14 +27,15 @@ const { href, text, variant = "primary", isDownload } = Astro.props;
 
 <style>
   a {
-    padding: 14px 32px;
+    padding: 10px 26px;
     display: block;
     underline: none;
-    width: 230px;
+    width: 180px;
     text-align: center;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
+    border-radius: 5%;
   }
 
   @media screen and (max-width: 600px) {
@@ -45,10 +46,10 @@ const { href, text, variant = "primary", isDownload } = Astro.props;
   }
 
   .primary {
-    background: var(--primary);
-    color: white;
+    background: white;
+    color: var(--dark);
+    border: 1px solid var(--dark);
   }
-
   .secondary {
     background: white;
     color: var(--primary);

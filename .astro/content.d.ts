@@ -166,7 +166,7 @@ declare module 'astro:content' {
   id: string;
   body?: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">;
+  data: any;
   rendered?: RenderedContent;
   filePath?: string;
 }>;
