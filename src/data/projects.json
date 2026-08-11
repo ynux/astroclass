@@ -21,5 +21,194 @@
       "Automation",
       "Cloud Concepts"
     ]
+  },
+  {
+    "title": "Databricks on AWS",
+    "fromdate": "June 2025",
+    "todate": "November 2025",
+    "industry": "Financial Services",
+    "slug": "Establishment of a Databricks data platform for processing web and user tracking data",
+    "tasks": [
+      "Build the cloud resources, including storage, compute, roles and privileges",
+      "Configuration of Databricks: S3 integrations, compute clusters, user management, and roles down to the catalog level",
+      "Connect data sources (DMS and Snowplow) and establish data sinks to PowerBI"
+    ],
+    "roles": "Cloud Architect & Engineer",
+    "skills": [
+      "AWS",
+      "Databricks",
+      "Terraform",
+      "GitHub Actions",
+      "Privilege Management",
+      "Cloud Security",
+      "Automation",
+      "Cloud Concepts"
+    ]
+  },
+  {
+    "title": "Data Flow on Azure",
+    "fromdate": "May 2025",
+    "todate": "June 2025",
+    "industry": "Travel and Logistics",
+    "slug": "Analysis of existing data flows from sources to reports, adaptation of reference architecture, and multi-stage implementation planning",
+    "tasks": [
+      "Assess and document the status quo, identifying architectural strengths and bottlenecks",
+      "Identify root causes triggering performance degradation and bottlenecks",
+      "Design a strategic roadmap spanning from the status quo to a modern target solution"
+    ],
+    "roles": "Solutions Architect",
+    "skills": [
+      "Requirements Analysis",
+      "DWH Architecture",
+      "Microsoft Azure Data Lake",
+      "Tableau",
+      "Data Analytics",
+      "Performance Tuning",
+      "Strategic Planning"
+    ]
+  },
+  {
+    "title": "AI Application Platform",
+    "fromdate": "January 2025",
+    "todate": "May 2025",
+    "industry": "Travel and Logistics",
+    "slug": "Development of an enterprise AI platform supporting simple chatbots, Chat-with-your-PDF capabilities, document comparison, and specialized RAG systems",
+    "tasks": [
+      "Derive and design the overarching target architecture for the AI environment",
+      "Implement automated infrastructure provisioning via Infrastructure as Code",
+      "Create reliable, secure, and fast continuous deployment (CI/CD) pipelines",
+      "Conduct knowledge transfer sessions to enable internal teams for ongoing development and operations"
+    ],
+    "roles": "Cloud Architect & Engineer",
+    "skills": [
+      "Solution Design",
+      "Cloud Engineering",
+      "CI/CD",
+      "Microsoft Azure DevOps",
+      "Terraform",
+      "Generative AI",
+      "Enterprise Architecture",
+      "Knowledge Transfer"
+    ]
+  },
+  {
+    "title": "Sizing and Migration Scenarios for AI Applications",
+    "fromdate": "November 2024",
+    "todate": "January 2025",
+    "industry": "Telecommunications",
+    "slug": "Strategy formulation for AI deployments, comparing feasibility, costs, and advantages of on-premises infrastructure versus Azure cloud services",
+    "tasks": [
+      "Create and evaluate multiple architectural deployment scenarios: On-Premises, Hybrid/Cloud Services, and Cloud-Only",
+      "Perform comprehensive total cost of ownership (TCO) calculations for each use case",
+      "Formulate decision proposals and strategic briefings for executive management"
+    ],
+    "roles": "Requirements Analyst",
+    "skills": [
+      "Solution Design",
+      "Requirements Engineering",
+      "Cost Modeling",
+      "Infrastructure Sizing",
+      "Strategic Consulting",
+      "On-Premises vs Cloud"
+    ]
+  },
+  {
+    "title": "AI Application Hosting Platform",
+    "fromdate": "August 2024",
+    "todate": "October 2024",
+    "industry": "Services",
+    "slug": "Evaluation and onboarding implementation of 10 distinct AI applications onto a unified, secure platform inside Azure",
+    "tasks": [
+      "Design a secure tenant architecture featuring isolated private resources alongside shared infrastructure",
+      "Automate infrastructure provisioning within fully isolated, private cloud networks",
+      "Implement centralized authentication and granular authorization mechanisms utilizing Microsoft Entra ID"
+    ],
+    "roles": "Cloud Architect & Engineer",
+    "skills": [
+      "Requirements Analysis",
+      "Cloud Security",
+      "Data Architecture",
+      "Azure DevOps",
+      "Terraform",
+      "Microsoft Entra ID",
+      "Private Networking",
+      "Multi-Tenancy"
+    ]
+  },
+  {
+    "title": "Enterprise Chatbot Development",
+    "fromdate": "April 2023",
+    "todate": "June 2024",
+    "industry": "Retail",
+    "slug": "Development of a GPT-powered conversational bot utilizing an advanced RAG system mapped to helpdesk databases, including query rephrasing, reranking, quality gates, and automated test suites",
+    "tasks": [
+      "Perform data analysis and text preprocessing on underlying database articles",
+      "Design the microservices and components architecture for the AI system",
+      "Implement application security, data masking, and compliance guardrails",
+      "Develop and engineer production-grade core services in Python"
+    ],
+    "roles": "Software & Infrastructure Engineer",
+    "skills": [
+      "Cloud Engineering",
+      "CI/CD",
+      "GitHub Actions",
+      "LLMs",
+      "Azure",
+      "GCP",
+      "AI Search",
+      "Python",
+      "RAG Architecture",
+      "Prompt Engineering"
+    ]
+  },
+  {
+    "title": "Enterprise Cloud Migration",
+    "fromdate": "July 2020",
+    "todate": "February 2023",
+    "industry": "Telecommunications",
+    "slug": "Evolution, scaling, and ongoing operation of over 150 analytical applications, including containerization and zero-downtime migration from on-premise data centers to the cloud",
+    "tasks": [
+      "Stabilize, scale, and manage a self-service corporate cloud platform",
+      "Execute architectural redesign and cloud-native migration for an analytics portal",
+      "Drive organizational transformation by introducing Kubernetes, automated CI/CD workflows, and cloud-first methodologies"
+    ],
+    "roles": "Team Lead & Engineer",
+    "skills": [
+      "AWS",
+      "GitLab",
+      "Kubernetes",
+      "Linux",
+      "Azure",
+      "Azure DevOps",
+      "Python",
+      "Terraform",
+      "Containerization",
+      "DevOps Culture",
+      "Team Leadership"
+    ]
+  },
+  {
+    "title": "Cloud-Based Data Warehouse Redesign",
+    "fromdate": "July 2019",
+    "todate": "January 2020",
+    "industry": "Energy",
+    "slug": "Architectural analysis and evaluation of the legacy data warehouse infrastructure and existing ETL framework",
+    "tasks": [
+      "Formulate a structured migration roadmap transitioning toward a Data Vault 2.0 methodology",
+      "Map and visualize data lineage across systems modeled as a network graph",
+      "Provision and automate isolated, reproducible database environments for developers",
+      "Build a functional Data Vault architecture prototype to validate design concepts",
+      "Conduct professional collaborative workshops focusing on modern Data Warehouse design principles"
+    ],
+    "roles": "Data Strategist",
+    "skills": [
+      "Data Governance",
+      "Graph Modeling",
+      "Python",
+      "Snowflake",
+      "Data Vault 2.0",
+      "ETL/ELT Architecture",
+      "Data Lineage"
+    ]
   }
 ]

@@ -4,62 +4,62 @@
     "projects": {
       "type": "object",
       "properties": {
-        "title": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "tech": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "link": {
-          "type": "string",
-          "format": "uri"
-        },
-        "slug": {
-          "type": "string"
-        },
-        "image": {
-          "type": "string"
-        },
-        "industry": {
-          "type": "string"
-        },
-        "dateRange": {
-          "type": "object",
-          "properties": {
-            "fromDate": {
-              "type": "string"
-            },
-            "toDate": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "fromDate",
-            "toDate"
-          ],
-          "additionalProperties": false
-        },
         "$schema": {
           "type": "string"
         }
       },
-      "required": [
-        "title",
-        "description",
-        "tech",
-        "link",
-        "slug",
-        "image",
-        "industry",
-        "dateRange"
-      ],
-      "additionalProperties": false
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "fromdate": {
+            "type": "string"
+          },
+          "todate": {
+            "type": "string"
+          },
+          "industry": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "tasks": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "roles": {
+            "type": "string"
+          },
+          "skills": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "image": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "fromdate",
+          "todate",
+          "industry",
+          "slug",
+          "tasks",
+          "roles",
+          "skills"
+        ],
+        "additionalProperties": false
+      }
     }
   },
   "$schema": "http://json-schema.org/draft-07/schema#"

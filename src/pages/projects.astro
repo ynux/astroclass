@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 import Section from "../components/Section.astro";
 import HorizontalSeparator from "../components/HorizontalSeparator.astro";
 const heading = "My Projects";
-const projects = await getCollection("project");
+const projects = await getCollection("projects");
 ---
 
 <Layout>
@@ -20,14 +20,6 @@ const projects = await getCollection("project");
           {project.data.title}
         </h3>
         <p class="description">{project.data.description}</p>
-        <div class="button-container">
-          <ButtonLink
-            href={`${project.data.githubURL}`}
-            text="View on Github"
-            variant="secondary"
-          />
-          <ButtonLink href={`${project.data.liveSiteURL}`} text="View Live" />
-        </div>
       </div>
     </div>
     ))}

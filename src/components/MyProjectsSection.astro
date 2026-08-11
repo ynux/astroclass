@@ -3,7 +3,7 @@ import Section from "./Section.astro";
 import SectionHeader from "./SectionHeader.astro";
 import { getCollection } from "astro:content";
 
-const projects = await getCollection("project");
+const projects = await getCollection("projects");
 ---
 
 <Section dark={true}>
@@ -15,9 +15,8 @@ const projects = await getCollection("project");
     {
       projects.map((project) => (
         <div class="card">
-          <img src={project.data.image} />
           <h3>
-            <a href={project.data.liveSiteURL}>{project.data.title}</a>
+            <a href={project.data.title}>{project.data.title}</a>
           </h3>
         </div>
       ))
