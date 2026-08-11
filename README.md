@@ -4,6 +4,10 @@ This is basically the code from the scrimba / coursera class [Build Fast Website
 
 I'm not a frontend person. I just did this because I had to, then found I enjoyed it. Not the first time in my career. However, this is probably as far as i get in this field.
 
+## Deployment
+
+to github pages: Follow https://docs.astro.build/en/guides/deploy/github/
+
 ## Astro Starter Kit: Basics
 
 ```sh
