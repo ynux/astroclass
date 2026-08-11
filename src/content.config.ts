@@ -1,18 +1,23 @@
 import { defineCollection, z } from "astro:content";
-import { file } from "astro/loaders";
 
-const project = defineCollection({
-  loader: file("src/data/projects.json"),
+const projectsCollection = defineCollection({
+  type: "data", // oder 'content' falls du Markdown/MDX nutzt
   schema: z.object({
     title: z.string(),
-    industry: z.string(),
-    datefrom: z.string().date(),
-    dateto: z.string().date(),
-    description: z.string().optional(),
-    image: z.string(),
+    description: z.string(),
+    tech: z.array(z.string()),
+    link: z.string().url(),
+    // Neue angeforderte Felder:
     slug: z.string(),
-    skills: z.array(z.string()),
+    image: z.string(),
+    industry: z.string(),
+    dateRange: z.object({
+      fromDate: z.string(), // z.B. "2024-01" oder "Jan 2024"
+      toDate: z.string(), // z.B. "2025-06" oder "now"
+    }),
   }),
 });
 
-export const collections = { project };
+export const collections = {
+  projects: projectsCollection,
+};
