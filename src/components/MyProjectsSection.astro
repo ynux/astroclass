@@ -18,11 +18,25 @@ const projects = await getCollection("projects");
           <h3>
             <a href={project.data.title}>{project.data.title}</a>
           </h3>
+          <p class="dates">
+            {project.data.fromdate} &ndash; {project.data.todate}
+          </p>
+          <ul class="tasks">
+            {project.data.tasks.map((task) => (
+              <li>{task}</li>
+            ))}
+          </ul>
+          <ul class="skills">
+            {project.data.skills.map((skill) => (
+              <li>{skill}</li>
+            ))}
+          </ul>
         </div>
       ))
     }
   </div>
 </Section>
+
 <style>
   .projects-container {
     display: grid;
@@ -46,7 +60,39 @@ const projects = await getCollection("projects");
       font-weight: 600;
       font-size: 18px;
     }
+    .dates {
+      margin-top: 8px;
+      font-size: 14px;
+      color: var(--primary);
+    }
 
+    .tasks {
+      margin-top: 12px;
+      padding-left: 18px;
+      font-size: 14px;
+      line-height: 1.5;
+
+      li {
+        margin-bottom: 4px;
+      }
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+      padding: 0;
+      list-style: none;
+
+      li {
+        background: var(--white);
+        border: 1px solid var(--dark);
+        border-radius: 12px;
+        padding: 4px 12px;
+        font-size: 12px;
+      }
+    }
     @media (max-width: 700px) {
       & {
         grid-template-columns: 1fr;

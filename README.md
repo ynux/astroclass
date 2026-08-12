@@ -4,6 +4,8 @@ This is basically the code from the scrimba / coursera class [Build Fast Website
 
 I'm not a frontend person. I just did this because I had to, then found I enjoyed it. Not the first time in my career. However, this is probably as far as i get in this field.
 
+It all started with https://brittanychiang.com . Every search led to it, and the first time i saw it, i wondered: Nice, but this is really what everybody is so crazy about? This shows how blind i was. The more i look at it the more beautiful it gets. It is so beautiful, in every detail.
+
 ## Deployment
 
 to github pages: Follow https://docs.astro.build/en/guides/deploy/github/

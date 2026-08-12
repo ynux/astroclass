@@ -2,35 +2,12 @@
   {
     "title": "Databricks on AWS",
     "fromdate": "June 2025",
-    "todate": "Novemnber 2025",
-    "industry": "Financial Services",
-    "slug": "Implement a Databricks pipeline to combine web tracking data with customer information",
-    "tasks": [
-      "Build the cloud resources, including storage, compute, roles and privileges",
-      "Configuration of Databricks: Resources and Roles down to the catalog level",
-      "Connect data sources and data sinks"
-    ],
-    "roles": "Cloud Architect & Engineer",
-    "skills": [
-      "AWS",
-      "Databricks",
-      "Terraform",
-      "GitHub Actions",
-      "Privilege Management",
-      "Cloud Security",
-      "Automation",
-      "Cloud Concepts"
-    ]
-  },
-  {
-    "title": "Databricks on AWS",
-    "fromdate": "June 2025",
     "todate": "November 2025",
     "industry": "Financial Services",
     "slug": "Establishment of a Databricks data platform for processing web and user tracking data",
     "tasks": [
       "Build the cloud resources, including storage, compute, roles and privileges",
-      "Configuration of Databricks: S3 integrations, compute clusters, user management, and roles down to the catalog level",
+      "Configuration of Databricks: Down to the catalog level",
       "Connect data sources (DMS and Snowplow) and establish data sinks to PowerBI"
     ],
     "roles": "Cloud Architect & Engineer",
