@@ -4,12 +4,13 @@ import { file } from "astro/loaders";
 const projectsCollection = defineCollection({
   loader: file("src/data/projects.json"),
   schema: z.object({
+    slug: z.string(),
+    showInProjects: z.boolean(),
     title: z.string(),
     fromdate: z.string(),
     todate: z.string(),
     industry: z.string(),
-    slug: z.string(),
-    description: z.string().optional(),
+    description: z.string(),
     tasks: z.array(z.string()),
     roles: z.string(),
     skills: z.array(z.string()),

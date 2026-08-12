@@ -3,12 +3,13 @@ import Container from "./Container.astro";
 
 interface Props {
   dark?: boolean;
+  id: string;
 }
 
-const { dark = false } = Astro.props;
+const { dark = false, id } = Astro.props;
 ---
 
-<section class={dark ? "dark" : ""}>
+<section id="id," class={dark ? "dark" : ""}>
   <Container>
     <slot />
   </Container>

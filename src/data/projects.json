@@ -1,14 +1,16 @@
 [
   {
     "title": "Databricks on AWS",
+    "slug": "databricks-on-aws",
+    "showInProjects": true,
     "fromdate": "June 2025",
     "todate": "November 2025",
     "industry": "Financial Services",
-    "slug": "Establishment of a Databricks data platform for processing web and user tracking data",
+    "description": "Establishment of a Databricks data platform for processing web and user tracking data",
     "tasks": [
       "Build the cloud resources, including storage, compute, roles and privileges",
-      "Configuration of Databricks: Down to the catalog level",
-      "Connect data sources (DMS and Snowplow) and establish data sinks to PowerBI"
+      "Configuration of Databricks down to the catalog level",
+      "Connect data sources (DMS and Snowplow) and data sinks to PowerBI"
     ],
     "roles": "Cloud Architect & Engineer",
     "skills": [
@@ -16,18 +18,17 @@
       "Databricks",
       "Terraform",
       "GitHub Actions",
-      "Privilege Management",
-      "Cloud Security",
-      "Automation",
-      "Cloud Concepts"
+      "Cloud Security"
     ]
   },
   {
     "title": "Data Flow on Azure",
+    "slug": "data-flow-on-azure",
+    "showInProjects": false,
     "fromdate": "May 2025",
     "todate": "June 2025",
     "industry": "Travel and Logistics",
-    "slug": "Analysis of existing data flows from sources to reports, adaptation of reference architecture, and multi-stage implementation planning",
+    "description": "Analysis of existing data flows from sources to reports, adaptation of reference architecture, and multi-stage implementation planning",
     "tasks": [
       "Assess and document the status quo, identifying architectural strengths and bottlenecks",
       "Identify root causes triggering performance degradation and bottlenecks",
@@ -45,16 +46,19 @@
     ]
   },
   {
-    "title": "AI Application Platform",
+    "title": "AI Application Platform on Azure",
+    "showInProjects": true,
+    "slug": "ai-application-platform-azure",
     "fromdate": "January 2025",
     "todate": "May 2025",
     "industry": "Travel and Logistics",
-    "slug": "Development of an enterprise AI platform supporting simple chatbots, Chat-with-your-PDF capabilities, document comparison, and specialized RAG systems",
+    "description": "Development of an enterprise AI platform supporting chatbots, Chat-with-your-PDF capabilities, document comparison, and specialized RAG systems",
     "tasks": [
-      "Derive and design the overarching target architecture for the AI environment",
-      "Implement automated infrastructure provisioning via Infrastructure as Code",
+      "Design the architecture for the AI platform",
+      "Implement automated infrastructure provisioning with Infrastructure as Code",
       "Create reliable, secure, and fast continuous deployment (CI/CD) pipelines",
-      "Conduct knowledge transfer sessions to enable internal teams for ongoing development and operations"
+      "Migrate to private endpoints",
+      "Knowledge transfer sessions to enable internal teams for ongoing development and operations"
     ],
     "roles": "Cloud Architect & Engineer",
     "skills": [
@@ -64,16 +68,17 @@
       "Microsoft Azure DevOps",
       "Terraform",
       "Generative AI",
-      "Enterprise Architecture",
       "Knowledge Transfer"
     ]
   },
   {
     "title": "Sizing and Migration Scenarios for AI Applications",
+    "slug": "sizing-and-migration-scenarios-for-ai-applications",
+    "showInProjects": true,
     "fromdate": "November 2024",
     "todate": "January 2025",
     "industry": "Telecommunications",
-    "slug": "Strategy formulation for AI deployments, comparing feasibility, costs, and advantages of on-premises infrastructure versus Azure cloud services",
+    "description": "Strategy formulation for AI deployments, comparing feasibility, costs, and advantages of on-premises infrastructure versus Azure cloud services",
     "tasks": [
       "Create and evaluate multiple architectural deployment scenarios: On-Premises, Hybrid/Cloud Services, and Cloud-Only",
       "Perform comprehensive total cost of ownership (TCO) calculations for each use case",
@@ -91,10 +96,12 @@
   },
   {
     "title": "AI Application Hosting Platform",
+    "slug": "ai-application-hosting-platform",
+    "showInProjects": true,
     "fromdate": "August 2024",
     "todate": "October 2024",
     "industry": "Services",
-    "slug": "Evaluation and onboarding implementation of 10 distinct AI applications onto a unified, secure platform inside Azure",
+    "description": "Evaluation and onboarding implementation of 10 distinct AI applications onto a unified, secure platform inside Azure",
     "tasks": [
       "Design a secure tenant architecture featuring isolated private resources alongside shared infrastructure",
       "Automate infrastructure provisioning within fully isolated, private cloud networks",
@@ -114,10 +121,12 @@
   },
   {
     "title": "Enterprise Chatbot Development",
+    "slug": "enterprise-chatbot-development",
+    "showInProjects": true,
     "fromdate": "April 2023",
     "todate": "June 2024",
     "industry": "Retail",
-    "slug": "Development of a GPT-powered conversational bot utilizing an advanced RAG system mapped to helpdesk databases, including query rephrasing, reranking, quality gates, and automated test suites",
+    "description": "Development of a GPT-powered conversational bot utilizing an advanced RAG system mapped to helpdesk databases, including query rephrasing, reranking, quality gates, and automated test suites",
     "tasks": [
       "Perform data analysis and text preprocessing on underlying database articles",
       "Design the microservices and components architecture for the AI system",
@@ -140,10 +149,12 @@
   },
   {
     "title": "Enterprise Cloud Migration",
+    "slug": "enterprise-cloud-migration",
+    "showInProjects": true,
     "fromdate": "July 2020",
     "todate": "February 2023",
     "industry": "Telecommunications",
-    "slug": "Evolution, scaling, and ongoing operation of over 150 analytical applications, including containerization and zero-downtime migration from on-premise data centers to the cloud",
+    "description": "Evolution, scaling, and ongoing operation of over 150 analytical applications, including containerization and zero-downtime migration from on-premise data centers to the cloud",
     "tasks": [
       "Stabilize, scale, and manage a self-service corporate cloud platform",
       "Execute architectural redesign and cloud-native migration for an analytics portal",
@@ -166,10 +177,12 @@
   },
   {
     "title": "Cloud-Based Data Warehouse Redesign",
+    "slug": "cloud-based-data-warehouse-redesign",
+    "showInProjects": false,
     "fromdate": "July 2019",
     "todate": "January 2020",
     "industry": "Energy",
-    "slug": "Architectural analysis and evaluation of the legacy data warehouse infrastructure and existing ETL framework",
+    "description": "Architectural analysis and evaluation of the legacy data warehouse infrastructure and existing ETL framework",
     "tasks": [
       "Formulate a structured migration roadmap transitioning toward a Data Vault 2.0 methodology",
       "Map and visualize data lineage across systems modeled as a network graph",

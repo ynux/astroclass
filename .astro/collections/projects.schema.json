@@ -11,6 +11,12 @@
       "additionalProperties": {
         "type": "object",
         "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "showInProjects": {
+            "type": "boolean"
+          },
           "title": {
             "type": "string"
           },
@@ -21,9 +27,6 @@
             "type": "string"
           },
           "industry": {
-            "type": "string"
-          },
-          "slug": {
             "type": "string"
           },
           "description": {
@@ -49,11 +52,13 @@
           }
         },
         "required": [
+          "slug",
+          "showInProjects",
           "title",
           "fromdate",
           "todate",
           "industry",
-          "slug",
+          "description",
           "tasks",
           "roles",
           "skills"

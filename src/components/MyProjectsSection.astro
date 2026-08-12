@@ -3,24 +3,28 @@ import Section from "./Section.astro";
 import SectionHeader from "./SectionHeader.astro";
 import { getCollection } from "astro:content";
 
-const projects = await getCollection("projects");
+const projects = await getCollection(
+  "projects",
+  ({ data }) => data.showInProjects,
+);
 ---
 
-<Section dark={true}>
+<Section id="projects" dark={true}>
   <SectionHeader
     heading="My Projects"
-    cta={{ text: "View All", href: "/projects" }}
+    cta={{ text: "View All", href: "#projects" }}
   />
   <div class="projects-container">
     {
       projects.map((project) => (
         <div class="card">
           <h3>
-            <a href={project.data.title}>{project.data.title}</a>
+            <a href={project.data.slug}>{project.data.title}</a>
           </h3>
           <p class="dates">
             {project.data.fromdate} &ndash; {project.data.todate}
           </p>
+          <p class="description">{project.data.description}</p>
           <ul class="tasks">
             {project.data.tasks.map((task) => (
               <li>{task}</li>

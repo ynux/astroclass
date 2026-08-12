@@ -1,16 +1,31 @@
 # Sunys Webpage
 
-This is basically the code from the scrimba / coursera class [Build Fast Websites with Astro](https://www.coursera.org/learn/build-fast-websites-with-astro) by [James Q. Quick]. I really enjoyed this course and highly recommend it. The class again is based on the Astro basics template, as you see below.
+This is my personal webpage for going freelance.
+
+It is basically the code from the scrimba / coursera class [Build Fast Websites with Astro](https://www.coursera.org/learn/build-fast-websites-with-astro) by [James Q. Quick]. I really enjoyed this course and highly recommend it. The class again is based on the Astro basics template, as you see below.
 
 I'm not a frontend person. I just did this because I had to, then found I enjoyed it. Not the first time in my career. However, this is probably as far as i get in this field.
 
 It all started with https://brittanychiang.com . Every search led to it, and the first time i saw it, i wondered: Nice, but this is really what everybody is so crazy about? This shows how blind i was. The more i look at it the more beautiful it gets. It is so beautiful, in every detail.
 
+## Design Decisions
+
+- Keep everything on one page
+- do not use all data fields of the projects (industry, roles)
+- do not attempt to do the cool mouse effect of Brittany Chiang (it would be cool, though ...)
+
 ## Deployment
 
+locally: `npm run dev`
 to github pages: Follow https://docs.astro.build/en/guides/deploy/github/
 
-## Astro Starter Kit: Basics
+## Troubleshooting
+
+- getting a `The collection "project" does not exist or is empty. Please check your content config file for errors.`, or rounding of image edges doesn't have an effect : Kill your server and run `npm run dev` again
+
+## Glitches
+
+## Astro Starter Kit: Basics (not Suny's documentation)
 
 ```sh
 npm create astro@latest -- --template basics
