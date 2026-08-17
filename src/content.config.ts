@@ -18,6 +18,24 @@ const projectsCollection = defineCollection({
   }),
 });
 
+const timelineCollection = defineCollection({
+  loader: file("src/data/cv.json"),
+  schema: z.object({
+    slug: z.string(),
+    company: z.string(),
+    showInTimeline: z.boolean(),
+    title: z.string(),
+    fromdate: z.string(),
+    todate: z.string(),
+    industry: z.string(),
+    description: z.string(),
+    tasks: z.array(z.string()),
+    roles: z.string(),
+    skills: z.array(z.string()),
+    image: z.string().optional(),
+  }),
+});
+
 export const collections = {
   projects: projectsCollection,
 };

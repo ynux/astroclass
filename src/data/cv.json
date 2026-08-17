@@ -1,0 +1,141 @@
+[
+  {
+    "company": "b.telligent Consulting",
+    "fromdate": "June 2019",
+    "todate": "March 2026",
+    "position": "Principal Consultant",
+    "location": "Germany-wide",
+    "items": [
+      {
+        "fromdate": "January 2025",
+        "todate": "December 2025",
+        "description": "Community Lead \"Cloud Security\""
+      },
+      {
+        "fromdate": "June 2025",
+        "todate": "November 2025",
+        "description": "Databricks on AWS, Concept and Architecture"
+      },
+      {
+        "fromdate": "April 2024",
+        "todate": "May 2025",
+        "description": "Several KI platform projects, design and construction, including pre-sales activities"
+      },
+      {
+        "fromdate": "April 2023",
+        "todate": "April 2024",
+        "description": "Development of a Retrieval-Augmented Generation Application"
+      },
+      {
+        "fromdate": "July 2020",
+        "todate": "January 2023",
+        "description": "Cloud Migration from on-premise to AWS and Azure, including deployment pipelines"
+      },
+      {
+        "fromdate": "July 2019",
+        "todate": "January 2020",
+        "description": "Cloud Data Warehouse Redesign"
+      }
+    ]
+  },
+  {
+    "company": "Gronau IT Cloud Consulting",
+    "fromdate": "January 2017",
+    "todate": "April 2019",
+    "position": "Automation Engineer",
+    "location": "Germany-wide",
+    "items": [
+      {
+        "fromdate": "November 2018",
+        "todate": "April 2019",
+        "description": "Development of a Data Science Platform using HashiCorp Nomad Consul"
+      },
+      {
+        "fromdate": "April 2018",
+        "todate": "October 2018",
+        "description": "Infrastructure automation of an Elastic Stack cluster on AWS"
+      },
+      {
+        "fromdate": "October 2017",
+        "todate": "March 2018",
+        "description": "Logging as a Service on OpenShift"
+      },
+      {
+        "fromdate": "March 2017",
+        "todate": "October 2017",
+        "description": "Performance tuning and automation of database systems"
+      },
+      {
+        "fromdate": "January 2017",
+        "todate": "February 2017",
+        "description": "Deployment of an Elastic Stack on AWS using CloudFormation"
+      }
+    ]
+  },
+  {
+    "company": "Teradata Marketing Applications (today \"Mapp Digital\")",
+    "fromdate": "May 2015",
+    "todate": "November 2016",
+    "position": "Log file analysis",
+    "location": "Munich",
+    "items": [
+      "Teradata Marketing Applications offered a platform for marketing e-Mails",
+      "I worked as a root cause analyst, providing data insights for internal and external customers",
+      "Using a dockerized Elastic Stack"
+    ]
+  },
+  {
+    "company": "clueda",
+    "fromdate": "October 2014",
+    "todate": "March 2015",
+    "position": "Big Data Scientist",
+    "location": "Munich",
+    "items": [
+      "clueda was a startup in Natural Language Processing (NLP)",
+      "Automation of the installation, configuration, and provisioning of application clusters using Puppet",
+      "Optimized data and storage systems including Elasticsearch, MySQL, Redis, and RabbitMQ"
+    ]
+  },
+  {
+    "company": "Autoscout24",
+    "fromdate": "February 2008",
+    "todate": "September 2014",
+    "position": "Systems Administrator & Architect",
+    "location": "Munich",
+    "items": [
+      "Worked within agile frameworks (since 2009) as part of the production operations team",
+      "Managed and engineered Linux environments and data systems: Oracle, PostgreSQL, MySQL, Endeca, and Elasticsearch",
+      "Key Projects: Implementation of an enterprise backup system, redesign and re-implementation of the core platform search, and automated provisioning of development databases"
+    ]
+  },
+  {
+    "company": "IZB (now \"finanz informatik technologie service\")",
+    "fromdate": "January 2002",
+    "todate": "January 2008",
+    "position": "Systems and Database Administrator",
+    "location": "Munich",
+    "items": [
+      "Managed critical IT infrastructure for financial institutions",
+      "Structured, planned, and administered highly critical database systems (Oracle)",
+      "Monitoring, complex migrations, and 24/7 on-call support"
+    ]
+  },
+  {
+    "company": "FJA (now \"msg life\")",
+    "fromdate": "October 1998",
+    "todate": "September 2000",
+    "position": "Software Development",
+    "location": "Zurich",
+    "items": [
+      "Developed enterprise software solutions for life insurance companies",
+      "Programmed in C and SQL; on-site debugging and troubleshooting for clients"
+    ]
+  },
+  {
+    "company": "University of Zurich",
+    "fromdate": "October 1993",
+    "todate": "November 1998",
+    "position": "Diploma in Mathematics",
+    "location": "Zurich, Switzerland"
+  }
+]
