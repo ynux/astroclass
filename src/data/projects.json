@@ -6,11 +6,14 @@
     "fromdate": "June 2025",
     "todate": "November 2025",
     "industry": "Financial Services",
-    "description": "Establishment of a Databricks data platform for processing web and user tracking data",
+    "description": "Design and implement a Databricks data platform on AWS for processing web and user tracking data",
     "tasks": [
-      "Build the cloud resources, including storage, compute, roles and privileges",
-      "Configuration of Databricks down to the catalog level",
-      "Connect data sources (DMS and Snowplow) and data sinks to PowerBI"
+      "Design network, compute, storage, roles and privileges",
+      "Build the cloud resources storage, compute, roles and privileges",
+      "Build and configure the Databricks resources down to the catalog level",
+      "Automation with Terraform and Github Actions",
+      "Connect data sources DMS and Snowplow",
+      "Connect PowerBI using gateways, establish authentication and privilege management"
     ],
     "roles": "Cloud Architect & Engineer",
     "skills": [
@@ -52,18 +55,17 @@
     "fromdate": "January 2025",
     "todate": "May 2025",
     "industry": "Travel and Logistics",
-    "description": "Development of an enterprise AI platform supporting chatbots, Chat-with-your-PDF capabilities, document comparison, and specialized RAG systems",
+    "description": "Development of an enterprise AI platform supporting chatbots, document analysis and RAG systems",
     "tasks": [
       "Design the architecture for the AI platform",
+      "Design and implement authentication, roles and privileges",
       "Implement automated infrastructure provisioning with Infrastructure as Code",
       "Create reliable, secure, and fast continuous deployment (CI/CD) pipelines",
-      "Migrate to private endpoints",
-      "Knowledge transfer sessions to enable internal teams for ongoing development and operations"
+      "Knowledge transfer sessions to enable internal teams"
     ],
     "roles": "Cloud Architect & Engineer",
     "skills": [
       "Solution Design",
-      "Cloud Engineering",
       "CI/CD",
       "Microsoft Azure DevOps",
       "Terraform",
@@ -72,17 +74,17 @@
     ]
   },
   {
-    "title": "Sizing and Migration Scenarios for AI Applications",
+    "title": "Compare AI options on-premise and with cloud components",
     "slug": "sizing-and-migration-scenarios-for-ai-applications",
     "showInProjects": true,
     "fromdate": "November 2024",
     "todate": "January 2025",
     "industry": "Telecommunications",
-    "description": "Strategy formulation for AI deployments, comparing feasibility, costs, and advantages of on-premises infrastructure versus Azure cloud services",
+    "description": "Strategy options for AI applications, comparing feasibility and costs of on-premises infrastructure versus Azure cloud services",
     "tasks": [
-      "Create and evaluate multiple architectural deployment scenarios: On-Premises, Hybrid/Cloud Services, and Cloud-Only",
+      "Evaluate multiple architectural deployment scenarios: On-Premises, Hybrid/Cloud Services, and Cloud-Only",
       "Perform comprehensive total cost of ownership (TCO) calculations for each use case",
-      "Formulate decision proposals and strategic briefings for executive management"
+      "Prepare a decision proposal and strategic briefings for executive management"
     ],
     "roles": "Requirements Analyst",
     "skills": [
@@ -90,7 +92,6 @@
       "Requirements Engineering",
       "Cost Modeling",
       "Infrastructure Sizing",
-      "Strategic Consulting",
       "On-Premises vs Cloud"
     ]
   },
@@ -101,22 +102,20 @@
     "fromdate": "August 2024",
     "todate": "October 2024",
     "industry": "Services",
-    "description": "Evaluation and onboarding implementation of 10 distinct AI applications onto a unified, secure platform inside Azure",
+    "description": "Evaluate and onboard 10 AI applications onto a unified, secure platform on Azure",
     "tasks": [
-      "Design a secure tenant architecture featuring isolated private resources alongside shared infrastructure",
-      "Automate infrastructure provisioning within fully isolated, private cloud networks",
-      "Implement centralized authentication and granular authorization mechanisms utilizing Microsoft Entra ID"
+      "Design a secure tenant architecture featuring isolated private and shared resources",
+      "Redesign to work with private endpoints",
+      "Implement centralized authentication and authorization with Microsoft Entra ID"
     ],
     "roles": "Cloud Architect & Engineer",
     "skills": [
       "Requirements Analysis",
       "Cloud Security",
-      "Data Architecture",
       "Azure DevOps",
       "Terraform",
       "Microsoft Entra ID",
-      "Private Networking",
-      "Multi-Tenancy"
+      "Private Networking"
     ]
   },
   {
@@ -126,35 +125,35 @@
     "fromdate": "April 2023",
     "todate": "June 2024",
     "industry": "Retail",
-    "description": "Development of a GPT-powered conversational bot utilizing an advanced RAG system mapped to helpdesk databases, including query rephrasing, reranking, quality gates, and automated test suites",
+    "description": "Development of a GPT-powered chat bot based on a helpdesk database",
     "tasks": [
-      "Perform data analysis and text preprocessing on underlying database articles",
-      "Design the microservices and components architecture for the AI system",
+      "data analysis and text preprocessing of the faq articles",
+      "Search optimization, rephrasing and reranking",
+      "Design the microservices architecture",
       "Implement application security, data masking, and compliance guardrails",
-      "Develop and engineer production-grade core services in Python"
+      "Integrate into existing frontend",
+      "Establish an extended test suite"
     ],
     "roles": "Software & Infrastructure Engineer",
     "skills": [
-      "Cloud Engineering",
-      "CI/CD",
+      "Python",
       "GitHub Actions",
       "LLMs",
       "Azure",
       "GCP",
       "AI Search",
-      "Python",
       "RAG Architecture",
       "Prompt Engineering"
     ]
   },
   {
-    "title": "Enterprise Cloud Migration",
+    "title": "Cloud Migration of ML Systems",
     "slug": "enterprise-cloud-migration",
     "showInProjects": true,
     "fromdate": "July 2020",
     "todate": "February 2023",
     "industry": "Telecommunications",
-    "description": "Evolution, scaling, and ongoing operation of over 150 analytical applications, including containerization and zero-downtime migration from on-premise data centers to the cloud",
+    "description": "Migration and operation of over 150 analytical applications, containerization of legacy applications",
     "tasks": [
       "Stabilize, scale, and manage a self-service corporate cloud platform",
       "Execute architectural redesign and cloud-native migration for an analytics portal",
